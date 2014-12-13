@@ -553,39 +553,89 @@ textarea {
   padding: 0.2em 0;
 }
 
+html {
+  font-size: 112.5%;
+}
+
 body {
   font-family: 'Muli', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-content,
+.main-content,
+.footer-content {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
 .header {
-  background-color: #ccc;
+  background-color: #ededed;
 }
 
 .header-content {
-  max-width: 768px;
-  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.header-content h1 {
+  margin: 0;
 }
 
 .main-content {
-  max-width: 768px;
-  margin: 0 auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.social-media-list li {
+  display: inline;
+}
+
+.profile {
+  margin: 5em 0;
+}
+
+.profile-picture {
+  float: left;
+  margin-right: 2em;
+}
+.profile-picture img {
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  -ms-border-radius: 75px;
+  border-radius: 75px;
+}
+
+.profile-headline {
+  overflow: hidden;
+}
+.profile-headline h2 {
+  margin: 0;
+}
+
+.profile-text {
+  overflow: hidden;
 }
 
 .footer {
-  background-color: #ccc;
+  background-color: #ededed;
 }
 
-.footer-content {
-  max-width: 768px;
-  margin: 0 auto;
+.footer-section-contact,
+.footer-section-imprint {
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
 }
 
 .ir {
