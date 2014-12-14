@@ -8,7 +8,12 @@
     .profile-picture {
         float: left;
         margin-right: 2em;
+        width: 35%;
+        height: auto;
+        max-width: 150px;
         img {
+            width: 100%;
+            height: auto;
             @include border-radius(75px);
         }
     }
@@ -16,20 +21,26 @@
         overflow: hidden;
         h2 {
             margin: 0;
+            @include respond-to(small) {
+                margin-top: 1em;
+            }
         }
     }
     .profile-text {
         overflow: hidden;
+        @include respond-to(small) {
+            clear: both;
+        }
     }
 }
 
 .buzzwords {
-	overflow: hidden;
-	margin-bottom: 4em;
-
+    overflow: hidden;
+    margin-bottom: 4em;
     ul li {
+        font-size: 0.8em;
         float: left;
-        margin: 0 1em 1em 0;
+        margin: 0 1em 0.5em 0;
         padding: 0 1em;
         color: #fff;
         background-color: $colorLightBlue;

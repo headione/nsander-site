@@ -34,3 +34,12 @@ a:hover {
 	margin: 0 auto;
 	padding: 0 1em;
 }
+
+.externalLink:before {
+    content: url(../svg/external.svg);
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 2px 8px 0 0;
+}

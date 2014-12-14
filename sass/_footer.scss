@@ -9,4 +9,8 @@
     vertical-align: top;
     display: inline-block;
     width: 49%;
+
+    @include respond-to(small){
+    	width: 100%;
+    }
 }

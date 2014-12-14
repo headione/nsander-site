@@ -590,6 +590,15 @@ a:hover {
   padding: 0 1em;
 }
 
+.externalLink:before {
+  content: url(../svg/external.svg);
+  display: block;
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin: 2px 8px 0 0;
+}
+
 .header {
   background-color: #ededed;
 }
@@ -627,8 +636,13 @@ a:hover {
 .profile .profile-picture {
   float: left;
   margin-right: 2em;
+  width: 35%;
+  height: auto;
+  max-width: 150px;
 }
 .profile .profile-picture img {
+  width: 100%;
+  height: auto;
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
   -ms-border-radius: 75px;
@@ -640,8 +654,18 @@ a:hover {
 .profile .profile-headline h2 {
   margin: 0;
 }
+@media only screen and (max-width: 420px) {
+  .profile .profile-headline h2 {
+    margin-top: 1em;
+  }
+}
 .profile .profile-text {
   overflow: hidden;
+}
+@media only screen and (max-width: 420px) {
+  .profile .profile-text {
+    clear: both;
+  }
 }
 
 .buzzwords {
@@ -649,8 +673,9 @@ a:hover {
   margin-bottom: 4em;
 }
 .buzzwords ul li {
+  font-size: 0.8em;
   float: left;
-  margin: 0 1em 1em 0;
+  margin: 0 1em 0.5em 0;
   padding: 0 1em;
   color: #fff;
   background-color: #7fb7da;
@@ -669,6 +694,12 @@ a:hover {
   vertical-align: top;
   display: inline-block;
   width: 49%;
+}
+@media only screen and (max-width: 420px) {
+  .footer-section-contact,
+  .footer-section-imprint {
+    width: 100%;
+  }
 }
 
 .ir {
