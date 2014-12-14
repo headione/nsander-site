@@ -555,10 +555,11 @@ textarea {
 
 html {
   font-size: 112.5%;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #383838;
 }
 
@@ -673,7 +674,7 @@ a:hover {
   margin-bottom: 4em;
 }
 .buzzwords ul li {
-  font-size: 0.8em;
+  font-size: 1em;
   float: left;
   margin: 0 1em 0.5em 0;
   padding: 0 1em;

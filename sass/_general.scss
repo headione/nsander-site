@@ -1,9 +1,10 @@
 html{
 	font-size: 112.5%;
+	text-rendering: optimizeLegibility;
 }
 
 body {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: $colorGray;
 }
 
