@@ -559,6 +559,7 @@ html {
 
 body {
   font-family: 'Muli', sans-serif;
+  color: #383838;
 }
 
 h1, h2, h3, h4, h5 {
@@ -570,6 +571,15 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: #006db0;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
 }
 
 .header-content,
@@ -592,39 +602,62 @@ ul {
   margin: 0;
 }
 
-.main-content {
-  padding-top: 2em;
-  padding-bottom: 2em;
+.header-headline {
+  width: 186px;
+  float: left;
+  overflow: hidden;
 }
 
-.social-media-list li {
-  display: inline;
+.social-media {
+  overflow: hidden;
+}
+.social-media .social-media-list li {
+  float: left;
+  margin: 0 5px 5px 0;
+}
+
+.main-content {
+  padding-top: 2em;
+  padding-bottom: 4em;
 }
 
 .profile {
-  margin: 5em 0;
+  margin: 4em 0;
 }
-
-.profile-picture {
+.profile .profile-picture {
   float: left;
   margin-right: 2em;
 }
-.profile-picture img {
+.profile .profile-picture img {
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
   -ms-border-radius: 75px;
   border-radius: 75px;
 }
-
-.profile-headline {
+.profile .profile-headline {
   overflow: hidden;
 }
-.profile-headline h2 {
+.profile .profile-headline h2 {
   margin: 0;
 }
-
-.profile-text {
+.profile .profile-text {
   overflow: hidden;
+}
+
+.buzzwords {
+  overflow: hidden;
+  margin-bottom: 4em;
+}
+.buzzwords ul li {
+  float: left;
+  margin: 0 1em 1em 0;
+  padding: 0 1em;
+  color: #fff;
+  background-color: #7fb7da;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  border-radius: 1em;
 }
 
 .footer {

@@ -1,32 +1,38 @@
-.main-content{
-	padding-top: 2em;
-	padding-bottom: 2em;
-}
-
-.social-media-list li{
-	display: inline;
+.main-content {
+    padding-top: 2em;
+    padding-bottom: 4em;
 }
 
 .profile {
-	margin: 5em 0;
+    margin: 4em 0;
+    .profile-picture {
+        float: left;
+        margin-right: 2em;
+        img {
+            @include border-radius(75px);
+        }
+    }
+    .profile-headline {
+        overflow: hidden;
+        h2 {
+            margin: 0;
+        }
+    }
+    .profile-text {
+        overflow: hidden;
+    }
 }
 
-.profile-picture {
-	float: left;
-	margin-right: 2em;
-	img{
-		@include border-radius(75px);
-	}
-}
-
-.profile-headline{
+.buzzwords {
 	overflow: hidden;
+	margin-bottom: 4em;
 
-	h2{
-		margin: 0;
-	}
-}
-
-.profile-text{
-	overflow: hidden;
+    ul li {
+        float: left;
+        margin: 0 1em 1em 0;
+        padding: 0 1em;
+        color: #fff;
+        background-color: $colorLightBlue;
+        @include border-radius(1em);
+    }
 }
