@@ -62,8 +62,7 @@ module.exports = function(grunt) {
                     livereload: true
                 },
             }
-        },
-
+        }
     });
 
     grunt.registerTask('default', ['watch']);
