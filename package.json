@@ -15,9 +15,6 @@
     "grunt-ftp": "^1.0.1",
     "load-grunt-tasks": "^2.0.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/headione/nsander-site.git"
