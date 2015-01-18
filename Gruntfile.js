@@ -34,6 +34,7 @@ module.exports = function(grunt) {
                     '!node_modules/**',
                     '!package.json',
                     '!README.md',
+                    '!**/dist/**',
                     '!**/sass/**'
                 ],
                 dest: 'dist/',
@@ -49,10 +50,10 @@ module.exports = function(grunt) {
                     host: 'sv02.net-housting.de',
                     auth: {
                         username: process.env.FTP_USER,
-                        password: process.env.FTP_PASSWORD
+                        password: process.env.FTP_PASS
                     },
-                    src: 'dist/',
-                    dest: 'html/nsander'
+                    src: '/dist/',
+                    dest: '/html/nsander'
                 }
             }
         },
@@ -71,7 +72,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dist', [
         'sass:dist',
         'copy',
-        'ftp-deploy'
+        'ftp-diff-deployer'
     ]);
 
 };
