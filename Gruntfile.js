@@ -52,8 +52,8 @@ module.exports = function(grunt) {
                         username: process.env.FTP_USER,
                         password: process.env.FTP_PASS
                     },
-                    src: '/dist/',
-                    dest: '/html/nsander'
+                    src: 'dist/',
+                    dest: 'html/nsander'
                 }
             }
         },
