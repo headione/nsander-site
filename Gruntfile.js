@@ -49,8 +49,8 @@ module.exports = function(grunt) {
                 options: {
                     host: 'sv02.net-housting.de',
                     auth: {
-                        username: process.env.FTP_USER,
-                        password: process.env.FTP_PASS
+                        username: process.env.USER,
+                        password: process.env.PASS
                     },
                     src: 'dist/',
                     dest: '/html/nsander'
