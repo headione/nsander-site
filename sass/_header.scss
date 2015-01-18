@@ -27,6 +27,7 @@
         margin: 0 5px 5px 0;
 
         img {
+            width: 45px;
             @include respond-to(small){
                 width: 26px;
             }
