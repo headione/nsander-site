@@ -9,5 +9,5 @@ install: npm install
 before_script: grunt dist
 env:
   global:
-  - secure: U+QtJ9BI052XWWFbKWlFhgyOxQHvIoAT0uQ+cLCUSSAJhgxDZErLvtrgLY0vT0xgGxcVeUCmp+Ck6ICgjvYokS726bT2TgYSNAy43rJRsXPeVQBVh/Su+EkNfo37mtHzd7pdcm8I9XC+OUj0fQ/j6Zapfp00/W82f3jBkmm4Ido=
-  - secure: jMVvS+EFKrdHfgm9TSNlpuc7kSznxv3eObVF2CelN3mppuDFSr5QJgHRj1m4DwipPe0Qpz1zm/BcdRU489JeKj/TW1sfLrHTXuj5VRdcrp8Lwdf4f8mHnTTwh5DOyIOFxqNs9n61gnhko5ETjpwGrkGaWu7n7a2fYKLMVjk4Jg0=
+  - secure: Iu3jZUtfSUl5MNGQ1ymQA12RHDM9UQHt0VH2V3ie9mTJMX1LuYfemqnwrQAg/A9bk0BAGKcaXPmokGuS5D4CwJi/InCCSdearETrMk9Jo3A+/h1VNr68fZDwpR+09TxK4K6o2V79wRJlUzqbG7Z9neZzcvmE/dsNfWCU6Xy5gXk=
+  - secure: bz4g3Xkx1Bu2h0uXGxuYYS9RTbJVD2RKPt+h224AIe//1mZGZJbtIrxtku3pdIsQ4ULl01attGN/Zi7I5zNeZNWpGA9Cq/Lysbd6KSzormzNwugqLpPVl2Vlp60UfeJFVka73MB+Xk/IZzbbfm8NLJNxtPSRCRBWrPEhXZJVqm0=
