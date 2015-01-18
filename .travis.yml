@@ -1,14 +1,13 @@
 language: node_js
 node_js:
-  - "0.11"
-before_install: 
-  - gem update --system
-  - gem install sass
-  - npm install -g grunt-cli
+- '0.11'
+before_install:
+- gem update --system
+- gem install sass
+- npm install -g grunt-cli
 install: npm install
 before_script: grunt dist
-
 env:
   global:
-  - secure: mSJklaOjzlzOT/Ntt6BwRYjwO7oaxDjk0J04Ac9ln7XpwGtIYldngu4+gS7WlcGV2X7RznyoKAFWgyKTZyZ1EC9mKaW9kd+et3Q4NZLeZeFVj5Qdjx6TUPLGSssM8rFf7pkivr2vQgcxjamZGLur/eEAqI/1jkk3p0VFpLqVhco=
-  - secure: oQKquv3LAsF3VcvNA2jC/4Hg3D65Zn350r4lT383tHiyQqJ9L+6+XTXMQO1CRywsyDgTgEOt6OUzvqDt5AtuIbd2zrayi6xqv3c290AO8nnRSEdPAsYouFZiCA9V04b45rSYFKFVj2xdB/buMfTapwOSWtJvQyfTuPt39qFjO6U=
+  - secure: U+QtJ9BI052XWWFbKWlFhgyOxQHvIoAT0uQ+cLCUSSAJhgxDZErLvtrgLY0vT0xgGxcVeUCmp+Ck6ICgjvYokS726bT2TgYSNAy43rJRsXPeVQBVh/Su+EkNfo37mtHzd7pdcm8I9XC+OUj0fQ/j6Zapfp00/W82f3jBkmm4Ido=
+  - secure: jMVvS+EFKrdHfgm9TSNlpuc7kSznxv3eObVF2CelN3mppuDFSr5QJgHRj1m4DwipPe0Qpz1zm/BcdRU489JeKj/TW1sfLrHTXuj5VRdcrp8Lwdf4f8mHnTTwh5DOyIOFxqNs9n61gnhko5ETjpwGrkGaWu7n7a2fYKLMVjk4Jg0=

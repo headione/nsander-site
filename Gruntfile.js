@@ -43,18 +43,15 @@ module.exports = function(grunt) {
                 filter: 'isFile',
             },
         },
-        'ftp-diff-deployer': {
-            options: {},
-            www: {
-                options: {
+        'ftp-deploy': {
+            build: {
+                auth: {
                     host: 'sv02.net-housting.de',
-                    auth: {
-                        username: process.env.FTP_USER,
-                        password: process.env.FTP_PASS
-                    },
-                    src: 'dist/',
-                    dest: 'html/nsander'
-                }
+                    port: 21,
+                    authKey: 'key1'
+                },
+                src: 'dist',
+                dest: '/html/nsander'
             }
         },
         watch: {
@@ -71,8 +68,9 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('dist', [
         'sass:dist',
+        'clean',
         'copy',
-        'ftp-diff-deployer'
+        'ftp-deploy'
     ]);
 
 };

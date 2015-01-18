@@ -15,6 +15,7 @@
     "grunt-ftp": "^1.0.1",
     "grunt-ftp-deploy": "^0.1.9",
     "grunt-ftp-diff-deployer": "^0.2.0",
+    "grunt-shell": "^1.1.1",
     "load-grunt-tasks": "^2.0.0"
   },
   "repository": {
