@@ -33,7 +33,8 @@ module.exports = function(grunt) {
                     '!Gruntfile.js',
                     '!node_modules/**',
                     '!package.json',
-                    '!README.md'
+                    '!README.md',
+                    '!**/sass/**'
                 ],
                 dest: 'dist/',
                 dot: false,
@@ -41,28 +42,18 @@ module.exports = function(grunt) {
                 filter: 'isFile',
             },
         },
-        ftp: {
-            options: {
-                host: 'sv02.net-housting.de',
-                user: 'web363',
-                pass: 'MVqVEU4t'
-            },
-            upload: {
-                files: {
-                    '/html/nsander': '*'
-                }
-            }
-        },
-        'ftp-deploy': {
-            build: {
-                auth: {
+        'ftp-diff-deployer': {
+            options: {},
+            www: {
+                options: {
                     host: 'sv02.net-housting.de',
-                    port: 21,
-                    authKey: 'key1'
-                },
-                src: 'dist',
-                dest: 'html/nsander',
-                exclusions: []
+                    auth: {
+                        username: process.env.FTP_USER,
+                        password: process.env.FTP_PASSWORD
+                    },
+                    src: 'dist/',
+                    dest: 'html/nsander'
+                }
             }
         },
         watch: {
