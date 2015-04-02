@@ -3,7 +3,7 @@
     padding-bottom: 4em;
 }
 
-.startimage img{
+.startimage img {
     width: 100%;
     height: auto;
 }
@@ -46,9 +46,37 @@
         font-size: 0.8em;
         float: left;
         margin: 0 0.5em 0.5em 0;
-        padding: 0 1em;
+        padding: 0.7em 1em;
         color: #fff;
         background-color: $colorLightBlue;
         @include border-radius(3px);
+    }
+}
+
+.links {
+    li {
+        a {
+            display: inline-block;
+            width: 50%;
+            @include respond-to(small) {
+                width: auto;
+                display: inline;
+            }
+            @include respond-to(medium) {
+                width: auto;
+                display: inline;
+            }
+        }
+        span {
+            font-style: italic;
+            @include respond-to(small) {
+                margin-bottom: 1em;
+                display: block;
+            }
+            @include respond-to(medium) {
+                margin-bottom: 1em;
+                display: block;
+            }
+        }
     }
 }

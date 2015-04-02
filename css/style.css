@@ -566,6 +566,7 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 ul {
@@ -695,13 +696,45 @@ a:hover {
   font-size: 0.8em;
   float: left;
   margin: 0 0.5em 0.5em 0;
-  padding: 0 1em;
+  padding: 0.7em 1em;
   color: #fff;
   background-color: #7fb7da;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
+}
+
+.links li a {
+  display: inline-block;
+  width: 50%;
+}
+@media only screen and (max-width: 420px) {
+  .links li a {
+    width: auto;
+    display: inline;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 1023px) {
+  .links li a {
+    width: auto;
+    display: inline;
+  }
+}
+.links li span {
+  font-style: italic;
+}
+@media only screen and (max-width: 420px) {
+  .links li span {
+    margin-bottom: 1em;
+    display: block;
+  }
+}
+@media only screen and (min-width: 421px) and (max-width: 1023px) {
+  .links li span {
+    margin-bottom: 1em;
+    display: block;
+  }
 }
 
 .footer {
