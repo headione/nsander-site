@@ -707,7 +707,7 @@ a:hover {
 
 .links li a {
   display: inline-block;
-  width: 50%;
+  width: 49%;
 }
 @media only screen and (max-width: 420px) {
   .links li a {
