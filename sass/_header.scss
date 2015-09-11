@@ -14,23 +14,22 @@
     width: 186px;
     float: left;
     overflow: hidden;
-
-    @include respond-to(small){
+    @include respond-to(small) {
         float: none;
     }
 }
 
 .social-media {
-	overflow: hidden;
+    overflow: hidden;
     .social-media-list li {
         float: left;
         margin: 0 5px 5px 0;
-
         img {
             width: 45px;
-            @include respond-to(small){
-                width: 26px;
-            }
+            // @include respond-to(small){
+            //     width: 26px;
+            // }
+       
         }
     }
 }

@@ -11,8 +11,8 @@
 .profile {
     margin: 4em 0;
     .profile-picture {
-        float: left;
-        margin-right: 2em;
+        float: none;
+        margin: 0 auto 2em;
         width: 35%;
         height: auto;
         max-width: 150px;
@@ -24,18 +24,12 @@
     }
     .profile-headline {
         overflow: hidden;
-        h2 {
-            margin: 0;
-            @include respond-to(small) {
-                margin-top: 1em;
-            }
-        }
+        text-align: center;
     }
     .profile-text {
         overflow: hidden;
-        @include respond-to(small) {
-            clear: both;
-        }
+        clear: both;
+        text-align: center;
     }
 }
 
@@ -62,6 +56,7 @@
                 width: auto;
                 display: inline;
             }
+
             @include respond-to(medium) {
                 width: auto;
                 display: inline;
@@ -73,6 +68,7 @@
                 margin-bottom: 1em;
                 display: block;
             }
+
             @include respond-to(medium) {
                 margin-bottom: 1em;
                 display: block;
