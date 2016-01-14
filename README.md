@@ -1,4 +1,3 @@
-nsander-site
-============
+[![Build Status](https://travis-ci.org/headione/nsander-site.svg)](https://travis-ci.org/headione/nsander-site)
 
-my minimalistic website
+My minimalistic website.
