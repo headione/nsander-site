@@ -10,4 +10,4 @@ before_script: grunt dist
 env:
   global:
   - secure: "DlEBEJWqhRwADq32HRz9CwM3cg41tLZfDCnS0RHVIzM6Z/0C1UQw1IKPvzA5y1Q/twCRfRmEOBm7j2DaONd8sSsNWXpRMQgIMAWLgwRLit+3XNgINC4irzJDis+XbGDuIhIzkhcD4nmEP9Sr3QQeRfE/XVSNlv/yvIZWxUK02x8="
-  - secure: "UpSztfaHJQfpIZ9YUpOxrUKwch3ivmbuyfL1Nnae8Np2UYPeOF8WLlfIUASyB8bS9fiZjwETOEs65jhVZgNne9o49XyWjUuqIheYVr3KVG1FRIq5snjRQfUf3pizZKfSNM1gv2kU/BKyOzD4ZWYkp8IF7hujfdMk2lA0yxQcdVg="
+  - secure: "pscYO0eif/adYsCirn8bTRlfwrEFJIKy6WjYmWlKkMONitAlE3LXxL7Nxsbci6pQFDd1vWrq8LJuPUJpJJyR4D4pDeL+6uSYlywgEhlCcD8sNdpvycI1OrdoMwA3EPt8asVVu0GCQlb1br/btWE6FZBHzSQjft3DPDfijzbyZgc="
