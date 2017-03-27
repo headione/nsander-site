@@ -11,7 +11,7 @@
 }
 
 .header-headline {
-    width: 186px;
+    margin-right: 1rem;
     float: left;
     overflow: hidden;
     @include respond-to(small) {
