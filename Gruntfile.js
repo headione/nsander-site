@@ -1,7 +1,5 @@
 module.exports = function(grunt) {
-
     require('load-grunt-tasks')(grunt);
-
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         sass: {
@@ -24,40 +22,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-        clean: ["dist"],
-        copy: {
-            main: {
-                expand: true,
-                src: [
-                    '**/*',
-                    '!Gruntfile.js',
-                    '!node_modules/**',
-                    '!package.json',
-                    '!README.md',
-                    '!**/dist/**',
-                    '!**/sass/**'
-                ],
-                dest: 'dist/',
-                dot: false,
-                flatten: false,
-                filter: 'isFile',
-            },
-        },
-        'ftp-diff-deployer': {
-            options: {},
-            www: {
-                options: {
-                    host: 'sv02.net-housting.de',
-                    auth: {
-                        username: process.env.USER,
-                        password: process.env.PASS
-                    },
-                    src: 'dist/',
-                    dest: '/html/nsander'
-
-                }
-            }
-        },
         watch: {
             css: {
                 files: 'sass/*.scss',
@@ -71,10 +35,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('dist', [
-        'sass:dist',
-        'clean',
-        'copy',
-        'ftp-diff-deployer'
+        'sass:dist'
     ]);
 
 };
